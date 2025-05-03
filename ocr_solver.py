@@ -11,7 +11,7 @@ class CaptchaSolver:
         """Initialize with optional Tesseract path."""
         if tesseract_path:
             pytesseract.pytesseract.tesseract_cmd = tesseract_path
-        self.ocr_config = r'--oem 3 --psm 7 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+        self.ocr_config = r'--oem 3 --psm 7 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 
     def solve(self, image_path):
         """Solve CAPTCHA image and return (text, confidence)."""
