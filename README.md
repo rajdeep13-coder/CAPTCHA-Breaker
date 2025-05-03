@@ -13,3 +13,8 @@ A Python-based tool that breaks simple CAPTCHA images using **Tesseract OCR**. I
 - ✅ Easily extendable with better OCR models or CNNs
 
 ---
+## 📦 Requirements
+
+See `requirements.txt` for dependencies.
+
+---
